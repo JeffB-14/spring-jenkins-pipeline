@@ -1,4 +1,7 @@
 pipeline {
+    environment {
+        registryUri = 'https://index.docker.io/v2/'
+    }
     agent {
         docker {
             image 'openjdk:17-alpine'
